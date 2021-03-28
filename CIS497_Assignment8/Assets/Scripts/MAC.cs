@@ -1,3 +1,10 @@
+/*
+ * Chris Smith
+ * MAC
+ * Assignment 8
+ * A class defining MAC Desktops.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

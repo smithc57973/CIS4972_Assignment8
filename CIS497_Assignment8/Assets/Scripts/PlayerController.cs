@@ -1,3 +1,10 @@
+/*
+ * Chris Smith
+ * PlayerController
+ * Assignment 8
+ * A script for managing player inputs.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +19,11 @@ public class PlayerController : MonoBehaviour
 
     PC pc = new PC();
     MAC mac = new MAC();
+
+    private void Start()
+    {
+        selected = pc;
+    }
 
     // Update is called once per frame
     void Update()
@@ -30,16 +42,18 @@ public class PlayerController : MonoBehaviour
             linux = selected.LikesLinux();
         }
 
-        output.text = selected.BuildComputer();
-
-        if (linux)
-        {
-            output.text += "Installing a virtual machine to run Linux\n";
-        }
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
             linux = !linux;
+        }
+
+        if (selected == pc || selected == mac)
+        {
+            output.text = selected.BuildComputer();
+            if (linux)
+            {
+                output.text += "Installing a virtual machine to run Linux\n";
+            }
         }
     }
 }

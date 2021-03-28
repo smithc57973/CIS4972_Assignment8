@@ -1,3 +1,10 @@
+/*
+ * Chris Smith
+ * Desktop
+ * Assignment 8
+ * An abstract class defining Desktop objects using the Template Method Pattern.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;

@@ -1,3 +1,10 @@
+/*
+ * Chris Smith
+ * PC
+ * Assignment 8
+ * A class defining PC Desktops.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
